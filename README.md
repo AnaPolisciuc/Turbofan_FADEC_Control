@@ -43,13 +43,13 @@ The system was validated using an automated MATLAB script, yielding the followin
 ![FADEC Model Architecture](FADEC_Simulink_Model.png)
 
 ## Repository Structure
-* `FADEC_Simulink_Model.slx`: The main Simulink block diagram.
+* `Engine_Control_System.slx`: The main Simulink block diagram.
 * `init_params.m`: Script to initialize engine matrices and PID maps.
 * `verify_performance.m`: Automated validation script for performance reporting.
 
 ## How to Run
 1. Run `init_params.m` to load matrices and controller gains into the Workspace.
-2. Open and run `FADEC_Simulink_Model.slx`.
+2. Open and run `Engine_Control_System.slx`.
 3. Execute `verify_performance.m` to generate the final performance report.
 
 ---
