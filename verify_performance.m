@@ -1,7 +1,11 @@
+%% ENGINE PERFORMANCE EVALUATION SCRIPT
+
+% Extract data from Simulink output object
 t = out.tout;
 y = out.turatie_motor;
 sp = out.setpoint;
 
+% Define performance criteria (Standard 95% Rise Time)
 target = sp(end);            
 threshold = 0.95 * target;
 
@@ -22,3 +26,4 @@ if ~isempty(idx)
 else
     fprintf('Engine did not reach the 95%% threshold during simulation.\n');
 end
+
